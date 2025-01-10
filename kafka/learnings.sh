@@ -18,6 +18,9 @@ bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localh
 # Describe Topic
 bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server localhost:9092
 
+# List Topics
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+
 # Produce Event in topic
 bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 
