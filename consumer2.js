@@ -3,7 +3,7 @@ const { Kafka, logLevel } = require("kafkajs");
 async function main() {
   const kafka = new Kafka({
     clientId: "my-app",
-    brokers: ["localhost:9092"],
+    brokers: ["localhost:29092", "localhost:39092", "localhost:49092"],
     logLevel: logLevel.INFO,
   });
 
